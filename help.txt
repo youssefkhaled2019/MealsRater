@@ -1,0 +1,33 @@
+python -m venv env
+env\Scripts\activate
+pip install django
+python.exe -m pip install --upgrade pip
+pip install djangorestframework
+django-admin startproject mealrater .
+python manage.py startapp api
+
+clear
+
+python manage.py makemigrations
+ python manage.py migrate  
+ python manage.py runserver  
+ python manage.py createsuperuser
+
+
+
+
+
+
+
+
+ http://127.0.0.1:8000/api/
+ {
+    "meals": "http://127.0.0.1:8000/api/meals/",
+    "ratings": "http://127.0.0.1:8000/api/ratings/"
+ }
+
+
+
+
+ postman
+ http://127.0.0.1:8000/api/ratings/2/
