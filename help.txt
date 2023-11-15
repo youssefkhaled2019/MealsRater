@@ -31,3 +31,12 @@ python manage.py makemigrations
 
  postman
  http://127.0.0.1:8000/api/ratings/2/
+
+
+ -------------------------
+ http://127.0.0.1:8000/api/meals/              #get
+-------------------------
+http://127.0.0.1:8000/api/meals/1/rate_meal/  #post
+stars=3
+usename=youaaef
+-------------------------
