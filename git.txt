@@ -1,0 +1,18 @@
+
+-------create branch------------------
+git checkout -b branch_name
+
+
+----------change branch to branch---------------
+
+git checkout branch_name
+
+
+
+
+
+
+git clone 
+
+
+git push --set-upstream origin branch_name

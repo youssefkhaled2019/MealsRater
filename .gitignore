@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 env/
+day.txt
+git.txt
+go.bat
+openproject.bat
+runserver.bat
+task.txt
+src/
 # C extensions
 *.so
 
