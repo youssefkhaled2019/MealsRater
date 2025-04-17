@@ -16,5 +16,8 @@ class MealAdmin(admin.ModelAdmin):
     search_fields = ['title', 'description']
     list_filter = ['title', 'description']
 
+
+
+
 admin.site.register(Meal, MealAdmin)
 admin.site.register(Rating, RatingAdmin)

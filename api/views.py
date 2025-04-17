@@ -47,9 +47,9 @@ class UserViewSet(viewsets.ModelViewSet):
                 }, 
             status=status.HTTP_201_CREATED)
     
-    # def list(self, request, *args, **kwargs):
-    #     response = {'message': 'You cant show  users '}
-    #     return Response(response, status=status.HTTP_400_BAD_REQUEST)
+    def list(self, request, *args, **kwargs):
+        response = {'message': 'You cant show  users '}
+        return Response(response, status=status.HTTP_400_BAD_REQUEST)
 
 
     def update(self, request, *args, **kwargs):
@@ -78,7 +78,7 @@ class MealViewSet(viewsets.ModelViewSet):#CRUD
 
     authentication_classes = (TokenAuthentication, )
     permission_classes = (IsAuthenticated,)
-
+                                                      # https://www.django-rest-framework.org/api-guide/viewsets/
     @action(detail=True, methods=['post'])
     def rate_meal(self, request, pk=None):
         if 'stars' in request.data:
